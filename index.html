@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বাংলাদেশ জামায়াতে ইসলামী: ক্ষমতার বিড়ম্বনা</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1 id="main-title">বাংলাদেশ জামায়াতে ইসলামী: ক্ষমতার বিড়ম্বনা</h1>
+        <header>
+            <div class="stat-box">
+                <span class="label">আদর্শিক বিশুদ্ধতা</span>
+                <div class="meter"><div id="meter-ip" class="fill" style="width: 50%;"></div></div>
+            </div>
+            <div class="stat-box">
+                <span class="label">পাশ্চাত্য স্বীকৃতি</span>
+                <div class="meter"><div id="meter-wa" class="fill" style="width: 50%;"></div></div>
+            </div>
+            <div class="stat-box">
+                <span class="label">রাজনৈতিক শক্তি</span>
+                <div class="meter"><div id="meter-ep" class="fill" style="width: 10%;"></div></div>
+            </div>
+        </header>
+
+        <main>
+            <div id="leader-portrait">
+                <div class="portrait-frame">
+                    <div id="leader-visual">👳</div>
+                </div>
+                <div id="era-label">যুগ ১: ভিত্তি স্থাপন</div>
+            </div>
+
+            <div id="dossier">
+                <div class="paper-texture"></div>
+                <h2 id="event-title">ফাইল #০০১</h2>
+                <p id="event-text">ইতিহাস লোড হচ্ছে...</p>
+                
+                <div id="stamp-area"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="options-container">
+                <button id="btn-opt-a" class="choice-btn">
+                    <span class="btn-text">অপশন ক</span>
+                    <span class="tooltip" id="tip-opt-a">ভবিষ্যদ্বাণী...</span>
+                </button>
+                <div class="or-divider">অথবা</div>
+                <button id="btn-opt-b" class="choice-btn">
+                    <span class="btn-text">অপশন খ</span>
+                    <span class="tooltip" id="tip-opt-b">ভবিষ্যদ্বাণী...</span>
+                </button>
+            </div>
+        </footer>
+
+        <!-- Custom Notification Modal -->
+        <div id="custom-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="modal-title">শিরোনাম</h2>
+                <p id="modal-body">বার্তা...</p>
+                <button id="modal-btn">চালিয়ে যান</button>
+            </div>
+        </div>
+
+        <!-- End Screen Overlay -->
+        <div id="end-screen" class="hidden">
+            <h1 id="end-title">ইতিহাসের সমাপ্তি</h1>
+            <p id="end-desc">...</p>
+            <button onclick="location.reload()">আবার শুরু করুন</button>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

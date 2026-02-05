@@ -269,9 +269,152 @@ footer {
     animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@keyframes popIn {
-    0% { transform: scale(0.8); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
+/* ... existing properties ... */
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        display: block; /* Remove center alignment constraints */
+        background-color: var(--bg-color); /* Match game bg for seamless look */
+    }
+
+    #game-container {
+        height: auto;
+        min-height: 100vh;
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 15px;
+        border: none;
+    }
+
+    #main-title {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    /* Compact Header */
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .stat-box {
+        padding: 5px;
+        min-width: 30%; /* Fit 3 in a row comfortably */
+        flex: 1 1 30%; 
+    }
+
+    .label {
+        font-size: 0.75rem;
+        margin-bottom: 4px;
+        white-space: nowrap; /* Prevent wrapping if possible */
+    }
+
+    .meter {
+        height: 8px;
+    }
+
+    /* Stack Main Content */
+    main {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+
+    /* Horizontal Portrait for Mobile */
+    #leader-portrait {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+        transform: none; /* Remove rotation to save space */
+        gap: 15px;
+        height: auto;
+    }
+
+    .portrait-frame {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0;
+        border-width: 2px;
+        flex-shrink: 0;
+    }
+
+    #leader-visual {
+        font-size: 3.5rem;
+        transform: translateY(4px);
+    }
+
+    #era-label {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    /* Dossier fixes */
+    #dossier {
+        padding: 20px 15px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        min-height: auto;
+    }
+
+    #event-title {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    #event-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* Stack Buttons */
+    .options-container {
+        flex-direction: column;
+        gap: 12px;
+        padding-bottom: 20px;
+    }
+
+    .choice-btn {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .btn-text {
+        font-size: 1rem;
+    }
+
+    .or-divider {
+        align-self: center;
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+
+    /* Custom Modal Mobile */
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #modal-title {
+        font-size: 1.4rem;
+    }
+
+    #modal-body {
+        font-size: 1rem;
+    }
+
+    #modal-btn {
+        width: 100%;
+        padding: 12px;
+    }
 }
 
 #modal-title {

@@ -94,6 +94,11 @@ header {
     box-shadow: inset 0 2px 0 rgba(255,255,255,0.3);
 }
 
+/* Specific colors for meters */
+#meter-ip { background: linear-gradient(90deg, #16a085, #2ecc71); }
+#meter-wa { background: linear-gradient(90deg, #2980b9, #3498db); }
+#meter-ep { background: linear-gradient(90deg, #c0392b, #e74c3c); }
+
 /* Main Area */
 main {
     flex: 1;

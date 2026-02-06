@@ -370,12 +370,12 @@ footer {
     }
 
     #event-title {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin-bottom: 15px;
     }
 
     #event-text {
-        font-size: 1.1rem;
+        font-size: 1.35rem; /* Increased readability */
         line-height: 1.6;
         margin-bottom: 20px;
     }
@@ -388,37 +388,38 @@ footer {
     }
 
     .choice-btn {
-        padding: 15px;
+        padding: 18px;
         width: 100%;
     }
 
     .btn-text {
-        font-size: 1rem;
+        font-size: 1.25rem; /* Larger touch target text */
     }
 
     .or-divider {
         align-self: center;
         margin: 5px 0;
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     /* Custom Modal Mobile */
     .modal-content {
         width: 90%;
-        padding: 20px;
+        padding: 25px;
     }
 
     #modal-title {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     #modal-body {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     #modal-btn {
         width: 100%;
-        padding: 12px;
+        padding: 15px;
+        font-size: 1.2rem;
     }
 }
 
